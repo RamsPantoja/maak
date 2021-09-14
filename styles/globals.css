@@ -2,8 +2,6 @@ html,
 body {
   padding: 0;
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, Segoe UI, Roboto, Oxygen,
-    Ubuntu, Cantarell, Fira Sans, Droid Sans, Helvetica Neue, sans-serif;
 }
 
 a {
@@ -13,4 +11,59 @@ a {
 
 * {
   box-sizing: border-box;
+}
+
+input::-webkit-outer-spin-button,
+input::-webkit-inner-spin-button {
+  -webkit-appearance: none;
+  margin: 0;
+}
+
+/* Firefox */
+input[type=number] {
+  -moz-appearance: textfield;
+}
+
+::-webkit-scrollbar {
+  width: 10px;
+  background-color: none;
+}
+
+::-webkit-scrollbar-track {
+  border-radius: 50px;
+  margin: 5px 0;
+  background-color: none;
+}
+
+::-webkit-scrollbar-thumb {
+  border-radius: 50px;
+  background-color: var(--background-sign);
+}
+
+:root {
+  --input-background: #fbfaf9;
+  --input-border-color: #f5cf9d;
+  --text-color: #909090;
+  --background-navbar: #000000;
+  --background-footer-main: #000000;
+  --background-footer-secondary: #0f0f0f;
+  --text-color-navbar-main: #ffffff;
+  --text-color-main: #6c6c6c;
+  --form-color: #fbfaf9;
+  --background-color-grey: #f2f2f2;
+  --font-family: 'Open Sans', sans-serif;
+  --main-color: #f15d3a;
+  --secondary-color: #ffffff;
+  --error-color: #d32f2f;
+  --success-color: #43a047;
+  --warning-color: #FF9D00;
+  --input-on-focus: #f57c00;
+  --input-text-color: #080e12;
+  --background-sign: #0f0f0f;
+  --background-menu: #0f0f0f;
+  --background-menu-overItem: #ffffff18;
+
+  /*Profiles Color Palette*/
+  --background-color-white: #ffffff;
+
 }

@@ -1,0 +1,46 @@
+.profileForm_container {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+}
+
+.profileForm {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 2.3em;
+    max-width: 800px;
+    width: 100%;
+    padding: 1.5em;
+}
+
+.profileForm_input {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 0.5em;
+}
+
+.profileForm_buttonSubmit {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    bottom: -4.3em;
+    z-index: 1;
+    background-color: #ffffff;
+    border-radius: 50%;
+}
+
+@media (max-width: 540px) {
+    .profileForm {
+        grid-template-columns: 1fr; 
+    }
+
+    .profileForm_buttonSubmit {
+        bottom: -4.3em;
+    }
+}

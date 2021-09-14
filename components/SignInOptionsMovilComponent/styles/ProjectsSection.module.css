@@ -1,0 +1,26 @@
+.projectsSection_container {
+    display: grid;
+    align-items: center;
+    gap: 1em;
+    margin-top: 3em;
+    max-width: 200px;
+    width: 100%;
+}
+
+.projectsSection_container_actions {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    padding: 0.5em 1em;
+    font-size: 14px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    border-radius: 0.5em;
+    transition: 0.2s ease;
+}
+
+.projectsSection_container_actions:hover {
+    color: var(--text-color-navbar-main);
+    cursor: pointer;
+    background-color: var(--background-menu-overItem);
+}

@@ -1,0 +1,108 @@
+.signUpForm_container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--form-color);
+    max-width: 450px;
+    width: 100%;
+    max-height: 600px;
+    height: 100%;
+    box-shadow: 0 3px 6px 0 rgba(0, 0, 0, 0.16);
+    border-radius: 26px;
+    flex-direction: column;
+    padding-bottom: 5em;
+    padding-left: 1em;
+    padding-right: 1em;
+}
+
+.signUpForm_title{
+    font-family: var(--font-family);
+    font-size: 25px;
+    font-stretch: normal;
+    font-style: normal;
+    line-height: normal;
+    letter-spacing: 4.95px;
+    text-align: center;
+    color: var(--text-color);
+    cursor: default;
+}
+
+.signUpForm {
+    display: grid;
+    gap: 2em;
+    max-width: 300px;
+    width: 100%;
+}
+
+.signUpForm_inputRadio_container {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    position: relative;
+}
+
+.signUpForm_inputRadio {
+    background-color: #ffffff;
+    appearance: none;
+    border-radius: 50%;
+    width: 1.8em;
+    height: 1.8em;
+    border: 3px solid #707070;
+    outline: none;
+    transition: 0.2s all linear;
+}
+
+.signUpForm_inputRadio:checked {
+    border: 8px solid var(--input-on-focus);
+}
+
+.signUpForm_inputRadio:hover {
+    cursor: pointer;
+}
+
+.signUpForm_inputRadio_label {
+    color: #8d9091;
+    font-family: var(--font-family);
+    font-size: 11px;
+    font-weight: lighter;
+}
+
+.signUpForm_linksToTerms {
+    text-decoration: underline;
+}
+
+.links_accountOptions {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+}
+
+.link {
+    text-decoration: underline;
+    color: var(--input-on-focus);
+    font-family: var(--font-family);
+    font-size: 12px;
+}
+
+.signUpForm_inputError {
+    padding: 0.5em;
+    color:  var(--error-color);
+    position: absolute;
+    right:0;
+    top: 1rem;
+    right: 1;
+    z-index: 1001;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 2em;
+    font-family: var(--font-family);
+    font-size: 12px;
+    cursor: default;
+}
+
+.circularProgress_center {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

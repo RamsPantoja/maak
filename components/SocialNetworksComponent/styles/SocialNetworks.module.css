@@ -1,0 +1,11 @@
+.socialNetworks {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.socialNetworks > a {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

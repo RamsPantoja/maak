@@ -1,0 +1,113 @@
+.profileBasicInformation {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 100%;
+    border-radius: 0 0 3em 3em;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+    margin-bottom: 5em;
+}
+
+.profileBasicInformation_inf {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    letter-spacing: 1px;
+    position: relative;
+    margin-top: 7em;
+    max-width: 1200px;
+    width: 100%;
+    margin-bottom: 2em;
+    gap: 1em;
+}
+
+.profileBasicInformation_inf > h4 {
+    color: var(--text-color-main);
+    font-size: 20px;
+    text-align: center;
+    font-weight: 600;
+}
+
+.profileBasicInformation_inf > p {
+    color: var(--text-color-main);
+    font-weight: 400;
+    font-size: 16px;
+    text-align: center;
+}
+
+.profileBasicInformation_inf > a {
+    color: var(--text-color-main);
+    font-weight: 400;
+    font-size: 15px;
+    text-align: center;
+}
+
+.profileBasicInformation_inf_basicData {
+    display: flex;
+    font-weight: 400;
+    align-items: center;
+    max-width: 600px;
+    width: 100%;
+    justify-content: space-around;
+}
+
+.profileBasicInformation_inf_basicData_item {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    max-width: 250px;
+}
+
+.profileBasicInformation_inf_basicData_item > span {
+    color: var(--text-color);
+    font-size: 15px;
+    padding-left: 1em;
+}
+
+.profileBasicInformation_inf_socialNetworks {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    max-width: 200px;
+    width: 100%;
+}
+
+.socialNetworkIcons {
+    fill: var(--text-color);
+    width: 20px;
+    height: 20px;
+    transition: 0.2s ease;
+}
+
+.socialNetworkIcons:hover {
+    fill: var(--text-color-main);
+    cursor: pointer;
+}
+
+.profileBasicInformation_inf > span {
+    color: var(--text-color);
+    font-weight: 400;
+    margin-top: 1em;
+    font-size: 15px;
+}
+
+.profileBasicInformation_buttonToEdit {
+    position: relative;
+    top: 1em;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+@media (max-width: 540px) {
+    .profileBasicInformation_inf_basicData {
+        flex-direction: column;
+        align-items: flex-start;
+        width: unset;
+    }
+
+    .profileBasicInformation_inf_basicData_item {
+        margin: 0.5em 0;
+    }
+}

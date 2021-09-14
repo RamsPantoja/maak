@@ -1,0 +1,65 @@
+.signInOptionsDesktop {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex: 1;
+}
+.signInOptionsDesktop_icons {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.signInOptionsDesktop_icons:hover {
+    cursor: pointer;
+}
+
+/*Estilos para el icono de notificaciones.*/
+.cls_1_notification, .cls_4_notification {
+    fill: none;
+}
+
+.cls_1_notification {
+    stroke: #fff;
+    stroke-width: 2px;
+    transition: 0.2s ease;
+}
+
+.cls_2_notification {
+    fill: #fff;
+}
+
+.cls_3_notification {
+    stroke: none;
+}
+
+.signInOptionsDesktop_icons:hover > svg > g > g > .cls_1_notification {
+    stroke: var(--main-color);
+}
+
+/*Estilos para el icono de notificaciones de mesajes.*/
+.cls_1_message, .cls_2_message, .cls_5_message {
+    fill: none;
+}
+
+.cls_1_message, .cls_2_message {
+    stroke: #fff;
+    stroke-width: 2px;
+    transition: 0.2s ease;
+}
+
+.cls_2_message {
+    stroke-linecap: round;
+}
+
+.cls_3_message {
+    fill: #fff;
+}
+
+.cls_4_message {
+    stroke: none;
+}
+
+.signInOptionsDesktop_icons:hover > svg > g > .cls_1_message {
+    stroke: var(--main-color);
+}

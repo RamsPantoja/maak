@@ -1,0 +1,137 @@
+.profilesDesktop_profiles {
+    display: grid;
+    gap: 2em;
+    padding: 0;
+    grid-template-columns: 1fr;
+}
+
+.profilesDesktop_profiles_item {
+    display: flex;
+    align-items: center;
+    background-color: #ffffff;
+    border-radius: 60px;
+    padding: 0.3em;
+    transition: 0.2s ease;
+    position: relative;
+}
+
+.profilesDesktop_profiles_item > span {
+    color: var(--text-color-main);
+    font-size: 18px;
+    letter-spacing: 1px;
+    margin: 0 1.5em;
+}
+
+.profilesDesktop_profiles_item:hover {
+    cursor: pointer;
+    box-shadow: 0 0 6px 0 rgba(0, 0, 0, 0.16);
+}
+
+.profilesDesktop_profiles_itemDescription_mir3d {
+    position: absolute;
+    display: none;
+    left: 18em;
+    top: -1em;
+    opacity: 0;
+    width: 300px;
+    padding: 1em 1.5em;
+    border-radius: 3em;
+    animation-duration: 0.2s;
+    background-color: #ffffff;
+    cursor: default;
+    animation-name: description_box;
+}
+
+.profilesDesktop_profiles_itemDescription_mir3d > p {
+    font-size: 15px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+.profilesDesktop_profiles_itemDescription_mir3d > i {
+    background-color: #ffffff;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -1.5em;
+    top: 2em;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.profilesDesktop_profiles_itemDescription_maker {
+    position: absolute;
+    display: none;
+    opacity: 0;
+    left: 18em;
+    top: -3.3em;
+    width: 300px;
+    padding: 1em 1.5em;
+    border-radius: 3em;
+    animation-duration: 0.2s;
+    background-color: #ffffff;
+    cursor: default;
+    animation-name: description_box;
+}
+
+.profilesDesktop_profiles_itemDescription_maker > p {
+    font-size: 15px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+.profilesDesktop_profiles_itemDescription_maker > i {
+    background-color: #ffffff;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -1.5em;
+    top: 4.5em;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+.profilesDesktop_profiles_itemDescription_manufacturer {
+    position: absolute;
+    display: none;
+    left: 18em;
+    top: -6.5em;
+    opacity: 0;
+    width: 300px;
+    padding: 1em 1.5em;
+    border-radius: 3em;
+    animation-duration: 0.2s;
+    background-color: #ffffff;
+    cursor: default;
+    animation-name: description_box;
+}
+
+.profilesDesktop_profiles_itemDescription_manufacturer > p {
+    font-size: 15px;
+    color: var(--text-color);
+    letter-spacing: 1px;
+}
+
+
+.profilesDesktop_profiles_itemDescription_manufacturer > i {
+    background-color: #ffffff;
+    position: absolute;
+    width: 30px;
+    height: 30px;
+    left: -1.5em;
+    top: 7.6em;
+    clip-path: polygon(100% 0, 0 50%, 100% 100%);
+}
+
+
+.profilesDesktop_textFocus {
+    color: var(--text-color-main);
+}
+
+.profilesDesktop_textFocus_important {
+    text-decoration: underline;
+}
+
+@media (max-width: 1024px) {
+    .profilesDesktop_profiles {
+        display: none;
+    }
+}

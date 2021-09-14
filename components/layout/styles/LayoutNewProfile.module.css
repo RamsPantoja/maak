@@ -1,0 +1,61 @@
+.layoutNewProfile {
+    display: flex;
+    flex-direction: column;
+    height: 100vh;
+    font-weight: 600;
+}
+
+.layoutNewProfile_header {
+    display: flex;
+    align-items: center;
+    min-height: 70px;
+    background-color: var(--background-navbar);
+    font-family: var(--font-family);
+    position: sticky;
+    top: 0;
+    z-index: 2;
+}
+
+.layoutNewProfile_section_container {
+    position: relative;
+    flex: 1;
+    display: flex;
+}
+
+.layoutNewProfile_section_background {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+
+.layoutNewProfile_section {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100%;
+    width: 100%;
+    padding: 1em;
+}
+
+.layoutNewProfile_footer_contact {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    min-height: 70px;
+    background-color: var(--background-footer-main);
+}
+
+.layoutNewProfile_footer_contact > a {
+    font-family: var(--font-family);
+    color: var(--text-color);
+    transition: 0.2s ease;
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+
+.layoutNewProfile_footer_contact > a:hover {
+    color: var(--text-color-navbar-main);
+}

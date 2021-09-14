@@ -1,0 +1,21 @@
+.backgroundImageProfile {
+    position: relative;
+    height: 250px;
+    width: 100%;
+}
+
+.backgroundImageProfile_buttonAdd {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: absolute;
+    right: 5em;
+    top: 3em;
+    border-radius: 100%;
+    transition: 0.2s ease;
+}
+
+.backgroundImageProfile_buttonAdd:hover {
+    cursor: pointer;
+    box-shadow: 0 0 50px 0 rgba(0, 0, 0, 0.16);
+}

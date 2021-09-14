@@ -1,0 +1,39 @@
+.ourProcess_container {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 2em 0.5em;
+    background-color: var(--secondary-color);
+}
+
+.ourProcess_subContainer {
+    background-color: #f2f2f2;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    max-width: 1500px;
+    width: 100%;
+    border-radius: 3em;
+    height: 700px;
+}
+  
+.ourProcess_subContainer > p {
+    color: var(--text-color-main);
+    margin-top: 2em;
+    font-size: 20px;
+    text-align: center;
+    padding-bottom: 0.3em;
+    border-bottom: 2px solid var(--text-color-main);
+    cursor: default;
+    font-weight: 600;
+    letter-spacing: 1px;
+}
+
+
+@media(max-width: 600px) {
+    .ourProcess_subContainer > p {
+        font-size: 20px;
+        margin: 2em 2em;
+    }
+}

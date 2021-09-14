@@ -1,0 +1,98 @@
+.materialIcons_menu {
+    display: none;
+    font-weight: 600;
+}
+
+.materialIcons_menu > span {
+    font-size: 36px;
+    color: var(--text-color-navbar-main);
+}
+  
+.materialIcons_menu > span:hover {
+    cursor: pointer;
+}
+
+.logotipo {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.logotipo:hover {
+    cursor: pointer;
+}
+
+.sidebarMenu_container_close {
+    display: flex;
+    position: fixed;
+    left: -100%;
+    top: 0;
+    bottom: 0;
+    right: 100%;
+    transition: 0.2s ease;
+}
+
+.sidebarMenu_container_open {
+    display: flex;
+    position: fixed;
+    left: 0%;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    transition: 0.2s ease;
+}
+
+.sidebarMenu_background {
+    background-color: rgba(0, 0, 0, 0.5);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+}
+
+.sidebarMenu_inf {
+    display: flex;
+    background-color: var(--background-navbar);
+    max-width: 400px;
+    position: absolute;
+    width: 100%;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    padding-top: 2em;
+    flex-direction: column;
+}
+
+.sidebarMenu_header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1em;
+}
+
+.materialIcons_close {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.materialIcons_close > span {
+    color: var(--text-color);
+    font-size: 24px;
+    transition: 0.2s ease;
+}
+
+.materialIcons_close > span:hover {
+    cursor: pointer;
+    color: var(--text-color-navbar-main);
+}
+
+@media(max-width: 920px) {
+    .materialIcons_menu {
+      display: flex;
+      align-items: center;
+      justify-content: space-around;
+      flex: 1;
+    }
+}

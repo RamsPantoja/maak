@@ -1,0 +1,110 @@
+.header_inf {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex: 1;
+    max-width: 1500px;
+    font-weight: 600;
+}
+
+.header_logo {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+  
+.header_logo:hover {
+    cursor: pointer;
+}
+
+.header_logo_signIn {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    color: var(--text-color-navbar-main);
+}
+  
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: flex-end;
+    max-width: 400px;
+    width: 100%;
+    gap: 3em;
+}
+  
+.navbar_link {
+    display: flex;
+    align-items: center;
+    color: var(--text-color);
+    letter-spacing: 1px;
+    font-size: 14px;
+    transition: 0.2s ease;
+}
+  
+.navbar_link:hover {
+    color: var(--text-color-navbar-main);
+}
+
+.header_inf_signContainer {
+    display: flex;
+    max-width: 300px;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    margin: 0 1em;
+}
+  
+.signButtons {
+    display: flex;
+    align-items: center;
+    flex: 1;
+    justify-content: space-between;
+}
+  
+.signButtons_signIn {
+    outline: none;
+    border: 1px solid var(--text-color);
+    background: none;
+    color: var(--text-color);
+    padding: 0.5em 1em;
+    font-size: 14px;
+    font-family: var(--font-family);
+    border-radius: 20px;
+    letter-spacing: 1px;
+    font-weight: 600;
+    transition: 0.2s ease;
+}
+  
+.signButtons_signIn:hover {
+    color: var(--text-color-navbar-main);
+    border-color: var(--text-color-navbar-main);
+    cursor: pointer;
+}
+  
+.signButtons_signUp {
+    outline: none;
+    background-color: var(--text-color-navbar-main);
+    color: var(--background-navbar);
+    font-family: var(--font-family);
+    padding: 0.5em 1em;
+    border: none;
+    font-size: 14px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    border-radius: 20px;
+    transition: 0.2s ease
+}
+  
+.signButtons_signUp:hover {
+    background-color: #000000;
+    border: 1px solid var(--text-color-navbar-main);
+    color: var(--text-color-navbar-main);
+    cursor: pointer;
+}
+
+@media(max-width: 920px) {
+    .header_inf {
+      display: none;
+    }
+}

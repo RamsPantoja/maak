@@ -1,0 +1,25 @@
+.mainButtonProfile {
+    background-color: var(--main-color);
+    color: #ffffff;
+    font-size: 16px;
+    font-weight: 600;
+    letter-spacing: 1px;
+    padding: 0.5em 3em;
+    border: 1px solid #ffffff;
+    outline: none;
+    border-radius: 3em;
+    -webkit-transition: 0.5s ease;
+    transition: 0.5s ease;
+    font-family: var(--font-family);
+}
+
+.mainButtonProfile:hover {
+    cursor: pointer;
+    transform: scale(1.03);
+}
+
+.mainButtonProfile_circularProgress {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

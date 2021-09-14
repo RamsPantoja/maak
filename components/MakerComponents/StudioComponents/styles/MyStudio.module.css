@@ -1,0 +1,7 @@
+.myStudio {
+    display: flex;
+    max-width: 1000px;
+    width: 100%;
+    justify-content: space-around;
+    align-items: center;
+}

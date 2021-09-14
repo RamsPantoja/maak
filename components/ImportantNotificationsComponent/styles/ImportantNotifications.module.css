@@ -1,0 +1,17 @@
+.importantNotifications {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--background-color-white);
+    width: 100%;
+    padding: 0.5em;
+    border-radius: 5em;
+    border: 1px solid var(--main-color);
+}
+
+.importantNotifications > span {
+    letter-spacing: 1px;
+    color: var(--text-color-main);
+    font-weight: 600;
+    font-size: 15px;
+}

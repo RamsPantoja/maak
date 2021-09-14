@@ -1,0 +1,40 @@
+.profileMyAddressDataSection {
+    display: grid;
+    gap: 1.5em;
+    grid-template-columns: repeat(2, 1fr);
+    width: 100%;
+    grid-template-rows: auto;
+    max-width: 800px;
+    padding: 1em 0.5em;
+    overflow-y: auto;
+}
+
+.profileMyAddressDataSection_addDirection {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 16%);
+    border-radius: 1em;
+    transition: 0.2s ease;
+    min-height: 250px;
+}
+
+.profileMyAddressDataSection_addDirection > span {
+    color: var(--text-color-main);
+    margin-top: 1em;
+    letter-spacing: 1px;
+    font-size: 14px;
+    font-weight: 600;
+}
+
+.profileMyAddressDataSection_addDirection:hover {
+    cursor: pointer;
+    transform: scale(1.01);
+}
+
+@media (max-width: 540px) {
+    .profileMyAddressDataSection {
+        grid-template-columns: 1fr;
+    }
+}

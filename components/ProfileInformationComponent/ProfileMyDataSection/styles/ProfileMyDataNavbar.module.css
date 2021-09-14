@@ -1,0 +1,67 @@
+.profileMyDataNavbar {
+    display: flex;
+    flex: 1;
+    align-items: center;
+    justify-content: center;
+}
+
+.profileMyDataNavbar_items {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    max-width: 700px;
+    width: 100%;
+    margin-bottom: 1em;
+}
+
+.profileMyDataNavbar_item {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.profileMyDataNavbar_item_name {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.profileMyDataNavbar_item_name > p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: var(--text-color);
+    transition: 0.2s ease;
+    margin: 0 0 0.5em 0;
+}
+
+.profileMyDataNavbar_item_name_active > p {
+    font-weight: 600;
+    letter-spacing: 1px;
+    font-size: 16px;
+    color: var(--text-color-main);
+    transition: 0.2s ease;
+    margin: 0 0 0.5em 0;
+}
+
+.profileMyDataNavbar_item_name > p:hover {
+    cursor: pointer;
+    color: var(--text-color-main);
+}
+
+.profileMyDataNavbar_item_noSelected {
+    padding: 1px 0;
+    width: 100%;
+    border-radius: 10px;
+    background-color: #ffffff;
+    transition: 0.2s ease;
+}
+
+.profileMyDataNavbar_item_selected {
+    padding: 1px 0;
+    width: 100%;
+    border-radius: 10px;
+    background-color: var(--text-color-main);
+    transition: 0.2s ease;
+}

@@ -1,0 +1,36 @@
+.profileMyAddressDataSection_direction {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 0.3em;
+    grid-template-rows: auto;
+    box-shadow: 0 0 6px 0 rgb(0 0 0 / 16%);
+    padding: 1.5em;
+    border-radius: 1em;
+    background-color: #ffffff;
+    color: var(--text-color);
+    font-size: 14px;
+    letter-spacing: 1px;
+}
+
+.profileMyAddressDataSection_direction > p {
+    color: var(--text-color-main);
+    font-weight: 600;
+}
+
+.profileMyAddressDataSection_direction_actionIcons {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 1em;
+}
+
+.profileMyAddressDataSection_direction_actionIcons > span {
+    color: var(--input-on-focus);
+    font-size: 13px;
+    transition: 0.2s ease;
+}
+
+.profileMyAddressDataSection_direction_actionIcons > span:hover {
+    cursor: pointer;
+    text-decoration: underline;
+}
