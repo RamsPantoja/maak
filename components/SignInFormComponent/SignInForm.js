@@ -39,7 +39,7 @@ const SignInForm = () => {
             }
 
             if (!session?.user.registeredProfile) {
-                router.push('/r3d/new_profile'); // redirige al usuario a la pagina de inicio si se logea correctamente.
+                router.push('/new_profile'); // redirige al usuario a la pagina de inicio si se logea correctamente.
             } else {
                 localStorage.setItem('profile', session?.user.mainProfile)
                 switch (session?.user.mainProfile) {
