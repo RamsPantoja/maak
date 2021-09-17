@@ -1,2 +1,0 @@
-const blurForBackgroundProfileImg = 'data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAQAAAACCAIAAADwyuo0AAAACXBIWXMAAAsTAAALEwEAmpwYAAAAIklEQVQImWNYPnfu/88fXr9+kZISy8DAwDCjPH/btjVAFgDDAQw90qX4LwAAAABJRU5ErkJggg==';
-export {blurForBackgroundProfileImg}
