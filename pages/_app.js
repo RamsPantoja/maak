@@ -1,7 +1,6 @@
 import '../styles/globals.css'
-import { SnackbarProvider } from 'notistack';
 import { useEffect } from 'react';
-import { useRouter } from 'next/dist/client/router';
+import { useRouter } from 'next/router';
 import nProgress from 'nprogress';
 import '../styles/nprogress.css';
 
@@ -29,10 +28,7 @@ function MyApp({ Component, pageProps }) {
   }, [router]);
 
   return (
-    <SnackbarProvider 
-    maxSnack={2}>
-        <Component {...pageProps}/>
-    </SnackbarProvider>
+    <Component {...pageProps}/>
   )
 }
 
