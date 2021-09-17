@@ -1,7 +1,5 @@
 import '../styles/globals.css'
 import { SnackbarProvider } from 'notistack';
-import { Provider } from 'next-auth/client';
-import StoreProvider from '../store/StoreProvider';
 import { useEffect } from 'react';
 import { useRouter } from 'next/dist/client/router';
 import nProgress from 'nprogress';
@@ -31,14 +29,10 @@ function MyApp({ Component, pageProps }) {
   }, [router]);
 
   return (
-    <Provider>
-      <SnackbarProvider 
-      maxSnack={2}>
-        <StoreProvider>
-          <Component {...pageProps}/>
-        </StoreProvider>
-      </SnackbarProvider>
-    </Provider>
+    <SnackbarProvider 
+    maxSnack={2}>
+        <Component {...pageProps}/>
+    </SnackbarProvider>
   )
 }
 
