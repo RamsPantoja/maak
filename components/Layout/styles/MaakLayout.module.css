@@ -1,0 +1,24 @@
+.maakLayout {
+    display: flex;
+    height: 100vh;
+    flex-direction: column;
+    font-family: var(--font-family);
+}
+
+.maakLayout_header {
+    min-height: 70px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    background-color: var(--secondary-color);
+    z-index: 20;
+}
+
+.maakLayout_relativeContainer {
+    position: relative;
+    top: 70px;
+}

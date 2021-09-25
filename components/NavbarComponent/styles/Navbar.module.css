@@ -1,0 +1,59 @@
+.navbar {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 1500px;
+    width: 100%;
+}
+
+.navbar_logo {
+    position: relative;
+    width: 250px;
+    height: 55px;
+}
+
+.navbar_logo:hover {
+    cursor: pointer;
+}
+
+.navbar_links {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 350px;
+    width: 100%;
+}
+
+.navbar_link {
+    color: var(--secondary-text-color);
+    font-weight: 600;
+    transition: 0.3s ease;
+}
+
+.navbar_link:hover {
+    color: var(--primary-text-color);
+}
+
+.navbar_signLinks {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    max-width: 330px;
+    width: 100%;
+}
+
+.navbar_linkSignIn {
+    color: var(--primary-text-color);
+}
+
+.navbar_linkSignUp {
+    padding: 0.5em 1em;
+    background-color: var(--primary-button-color);
+    border-radius: 0.3em;
+    color: var(--primary-text-color);
+    transition: 0.3s ease;
+}
+
+.navbar_linkSignUp:hover {
+    background-color: var(--primary-button-color-hover);
+}

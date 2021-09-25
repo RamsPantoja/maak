@@ -2,6 +2,7 @@ html,
 body {
   padding: 0;
   margin: 0;
+  background-color: var(--secondary-color);
 }
 
 a {
@@ -22,4 +23,20 @@ input::-webkit-inner-spin-button {
 /* Firefox */
 input[type=number] {
   -moz-appearance: textfield;
+}
+
+
+:root {
+  --primary-color: #4d54fe;
+  --secondary-color: #111727;
+  --third-color: #00e7df;
+  --last-color: #1a0e92;
+  --primary-text-color: #fafafa;
+  --secondary-text-color: #adbdcc;
+  --outline-card-color: #0e131f;
+  --card-color: #1e2938;
+  --outline-button-color: #1e2938;
+  --primary-button-color: #4d54fe;
+  --primary-button-color-hover: #4346e9;
+  --font-family: 'Roboto Mono', monospace;
 }
