@@ -1,5 +1,5 @@
 import { useEffect, useRef } from 'react';
-import styles from './styles/BackgroundAnimation.module.css';
+import { BackgroundAnimationContainer } from './BackgroundAnimationStyles/BackgroundAnimationStyles';
 
 const BackgroundAnimation = ({children}) => {
     const backgroundAnimation = useRef(null);
@@ -41,9 +41,9 @@ const BackgroundAnimation = ({children}) => {
     }, [backgroundAnimation])
 
     return (
-        <div ref={backgroundAnimation} className={styles.backgroundAnimation}>
+        <BackgroundAnimationContainer ref={backgroundAnimation}>
             {children}
-        </div>
+        </BackgroundAnimationContainer>
     )
 }
 

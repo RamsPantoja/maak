@@ -1,23 +1,28 @@
-import styles from './styles/MaakLayout.module.css';
-
 //Componentes
 import Navbar from '../NavbarComponent/Navbar';
+import Footer from '../FooterComponent/Footer';
+
+import { 
+    MaakLayoutContainer, 
+    Header, 
+    MaakLayoutRelativeContainer, 
+    MaakLayoutFooter } from './LayoutStyles/MaakLayoutStyles';
 
 const MaakLayout = ({children}) => {
     return (
-        <div className={styles.maakLayout}>
-            <header className={styles.maakLayout_header}>
+        <MaakLayoutContainer>
+            <Header>
                 <Navbar/>
-            </header>
-            <div className={styles.maakLayout_relativeContainer}>
-                <main className={styles.maakLayout_main}>
+            </Header>
+            <MaakLayoutRelativeContainer>
+                <main>
                     {children}
                 </main>
-                <footer className={styles.maakLayout_footer}>
-
-                </footer>
-            </div>
-        </div>
+                <MaakLayoutFooter>
+                    <Footer/>
+                </MaakLayoutFooter>
+            </MaakLayoutRelativeContainer>
+        </MaakLayoutContainer>
     )
 }
 

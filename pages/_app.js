@@ -1,8 +1,7 @@
-import '../styles/globals.css'
+import '../styles/globals.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import nProgress from 'nprogress';
-import '../styles/nprogress.css';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
