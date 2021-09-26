@@ -7,7 +7,7 @@ import {
   CreateXSellGridItem,
   CreateXSellWidthView,
   Slogan,
-} from './pagesStyles/index';
+} from '../pagesStyles/index';
 
 //Componentes
 import BackgroundAnimation from '../components/BackgroundAnimationComponent/BackgroundAnimation';
