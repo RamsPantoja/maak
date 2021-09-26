@@ -2,9 +2,17 @@ import '../styles/globals.css';
 import { useEffect } from 'react';
 import { useRouter } from 'next/router';
 import nProgress from 'nprogress';
+import StoreProvider from '../store/StoreProvider';
+import '../styles/nprogress.css';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
+
+  useEffect(() => {
+    if (!localStorage.getItem('theme')) {
+      localStorage.setItem('theme', 'light')
+    }
+  }, []);
 
   useEffect(() => {
     const handleStart = (url) => {
@@ -27,7 +35,9 @@ function MyApp({ Component, pageProps }) {
   }, [router]);
 
   return (
-    <Component {...pageProps}/>
+    <StoreProvider>
+      <Component {...pageProps}/>
+    </StoreProvider>
   )
 }
 

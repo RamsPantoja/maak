@@ -42,13 +42,13 @@ const Home = () => {
             <h2>Crea & vende tus NFTs</h2>
             <CreateXSellGrid>
               <CreateXSellGridItem>
-                <Image src='/svg/028-wallet.svg' width={100} height={100}/>
+                <Image src='/svg/028-wallet.svg' alt='billetera blockchain icono' width={100} height={100}/>
                 <p>Configura tu billetera</p>
                 <span>Configura la billetera de tu elección, con ella puedes hacer y recibir transacciones sobre tus NFTs.</span>
                 <span>Una vez configurada, conectala a Maak.</span>
               </CreateXSellGridItem>
               <CreateXSellGridItem>
-                <Image src='/svg/025-tokens.svg' width={100} height={100}/>
+                <Image src='/svg/025-tokens.svg' alt='tokens blockchain icono' width={100} height={100}/>
                 <p>Crea tu colección</p>
                 <span>
                   Configura tu colección. Agrega información general sobre tu colección, imagen, descripción, 
@@ -56,13 +56,13 @@ const Home = () => {
                 </span>
               </CreateXSellGridItem>
               <CreateXSellGridItem>
-                <Image src='/svg/026-file.svg' width={100} height={100}/>
+                <Image src='/svg/026-file.svg' alt='archivo nft icono' width={100} height={100}/>
                 <p>Agrega tus NFTs</p>
                 <span>Sube tu arte, pueden ser imágenes, videos, audio e incluso arte 3D.</span>
                 <span>Agrega nombre, descripción, y los metadatos que creas necesarios. Puedes personalizar las propiedades de tus NFTs.</span>
               </CreateXSellGridItem >
               <CreateXSellGridItem>
-                <Image src='/svg/006-coin.svg' width={100} height={100}/>
+                <Image src='/svg/006-coin.svg' alt='coins nft icono' width={100} height={100}/>
                 <p>Ponlos en venta</p>
                 <span>
                   Una vez configurados tus NFTs, solo es cuestión de que decidas como quieres venderlos, 

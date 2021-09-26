@@ -23,13 +23,13 @@ const Navbar = () => {
                 <Image src='/logotipo.svg' layout='fill' priority={true} alt='logotipo logotipo maak'/>
             </NavbarLogo>
             <NavbarLinks>
-                <Link href='/'><NavbarLink>¿NFT?</NavbarLink></Link>
-                <Link href='/'><NavbarLink>Tienda digital</NavbarLink></Link>
-                <Link href='/'><NavbarLink>Crear</NavbarLink></Link>
+                <Link href='/' passHref><NavbarLink>¿NFT?</NavbarLink></Link>
+                <Link href='/' passHref><NavbarLink>Tienda digital</NavbarLink></Link>
+                <Link href='/' passHref><NavbarLink>Crear</NavbarLink></Link>
             </NavbarLinks>
             <NavbarSignLinks>
-                <Link href='/sign_in'><NavbarLinkSignIn>Iniciar sesión</NavbarLinkSignIn></Link>
-                <Link href='/sign_up'><NavbarLinkSignUp>Crea tu cuenta</NavbarLinkSignUp></Link>
+                <Link href='/sign_in' passHref><NavbarLinkSignIn>Iniciar sesión</NavbarLinkSignIn></Link>
+                <Link href='/sign_up' passHref><NavbarLinkSignUp>Crea tu cuenta</NavbarLinkSignUp></Link>
             </NavbarSignLinks>
         </NavbarContainer>
     )

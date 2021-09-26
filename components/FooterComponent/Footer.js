@@ -56,6 +56,9 @@ const Footer = () => {
                     </FooterListItem>
                 </FooterList>
             </FooterCard>
+            <FooterCard>
+                
+            </FooterCard>
         </FooterContainer>
     )
 }
