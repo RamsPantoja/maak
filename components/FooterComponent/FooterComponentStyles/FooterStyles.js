@@ -16,7 +16,10 @@ export const FooterCard = styled.div`
     flex-direction: column;
 
     p {
-        color: var(--primary-text-color);
+        color: ${
+            props => props.theme === 'dark' ? 'var(--primary-text-color)' 
+            : props.theme === 'light' ? 'var(--primary-text-color-white-theme)' : 'var(--primary-text-color-white-theme)'
+        };
         font-weight: 400;
     }
 `
@@ -37,7 +40,10 @@ export const FooterListItem = styled.li`
     cursor: default;
     
     &:hover {
-        color: var(--primary-text-color);
+        color: ${
+            props => props.theme === 'dark' ? 'var(--primary-text-color)' 
+            : props.theme === 'light' ? 'var(--primary-text-color-white-theme)' : 'var(--primary-text-color-white-theme)'
+        };
         cursor: pointer;
     }
 `

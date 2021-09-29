@@ -10,13 +10,19 @@ export const Slogan = styled.div`
     h1 {
         font-size: 5rem;
         font-weight: 600;
-        color: var(--primary-text-color);
+        color: ${
+            props => props.theme === 'dark' ? 'var(--primary-text-color)' 
+            : props.theme === 'light' ? 'var(--primary-text-color-white-theme)' : 'var(--primary-text-color-white-theme)'
+        };
         text-align: center; 
     }
 
     p {
         text-align: center;
-        color: var(--primary-text-color);
+        color: ${
+            props => props.theme === 'dark' ? 'var(--primary-text-color)' 
+            : props.theme === 'light' ? 'var(--primary-text-color-white-theme)' : 'var(--primary-text-color-white-theme)'
+        };
         font-weight: 600;
         font-size: 2rem;
         max-width: 700px;
@@ -33,6 +39,11 @@ export const About = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
+    background-color: ${
+        props => props.theme === 'dark' ? 'var(--secondary-color)' 
+            : props.theme === 'light' ? 'var(--last-color-white-theme)' : 'var(--last-color-white-theme)'
+    };
+    margin-top: 2em;
 `
 
 export const AboutWidthView = styled.div`
@@ -51,7 +62,10 @@ export const AboutInf = styled.div`
     margin-left: 1em;
 
     h2 {
-        color: var(--primary-text-color);
+        color: ${
+            props => props.theme === 'dark' ? 'var(--primary-text-color)' 
+            : props.theme === 'light' ? 'var(--primary-text-color-white-theme)' : 'var(--primary-text-color-white-theme)'
+        };
         font-size: 2rem;
         font-weight: 600;
     }
@@ -67,7 +81,11 @@ export const CreateXSell = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-    margin: 7em 0;
+    padding: 7em 0;
+    background-color: ${
+        props => props.theme === 'dark' ? 'var(--secondary-color)' 
+        : props.theme === 'light' ? 'var(--last-color-white-theme)' : 'var(--last-color-white-theme)'
+    };
 `
 
 export const CreateXSellWidthView = styled.div`
@@ -79,7 +97,10 @@ export const CreateXSellWidthView = styled.div`
     width: 100%;
 
     h2 {
-        color: var(--primary-text-color);
+        color: ${
+            props => props.theme === 'dark' ? 'var(--primary-text-color)' 
+            : props.theme === 'light' ? 'var(--primary-text-color-white-theme)' : 'var(--primary-text-color-white-theme)'
+        };
         font-size: 2rem;
         font-weight: 600;
     }
@@ -99,13 +120,19 @@ export const CreateXSellGridItem = styled.div`
     align-items: center;
     justify-content: flex-start;
     flex-direction: column;
-    background-color: var(--card-color);
+    background-color: ${
+        props => props.theme === 'dark' ? 'var(--card-color)' 
+        : props.theme === 'light' ? 'var(--card-color-white-theme)' : 'var(--card-color-white-theme)'
+    };
     padding: 2em;
     border-radius: 0.3em;
 
     p {
         margin: 0;
-        color: var(--primary-text-color);
+        color: ${
+            props => props.theme === 'dark' ? 'var(--primary-text-color)' 
+            : props.theme === 'light' ? 'var(--primary-text-color-white-theme)' : 'var(--primary-text-color-white-theme)'
+        };
         font-size: 1.1rem;
         font-weight: 600;
         text-align: center;

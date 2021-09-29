@@ -7,7 +7,7 @@ import '../styles/nprogress.css';
 
 function MyApp({ Component, pageProps }) {
   const router = useRouter();
-
+  
   useEffect(() => {
     if (!localStorage.getItem('theme')) {
       localStorage.setItem('theme', 'light')

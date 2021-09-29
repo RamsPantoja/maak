@@ -24,7 +24,11 @@ export const BackgroundAnimationContainer = styled.div`
     display: flex;
     align-items: center;
     justify-content: center;
-
+    background-color: ${
+        props => props.theme === 'dark' ? 'var(--secondary-color)' 
+        : props.theme === 'light' ? 'var(--secondary-color-white-theme)' : 'var(--secondary-color-white-theme)'
+    };
+    
     & > span {
         position: absolute;
         pointer-events: none;

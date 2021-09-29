@@ -6,19 +6,24 @@ import {
     MaakLayoutContainer, 
     Header, 
     MaakLayoutRelativeContainer, 
-    MaakLayoutFooter } from './LayoutStyles/MaakLayoutStyles';
+    MaakLayoutFooter,
+    MaakLayoutMain} from './LayoutStyles/MaakLayoutStyles';
+import { useContext } from 'react';
+import { StoreContext } from '../../store/StoreProvider';
 
 const MaakLayout = ({children}) => {
+    const [store, dispatch] = useContext(StoreContext);
+    
     return (
         <MaakLayoutContainer>
-            <Header>
+            <Header theme={store.theme}>
                 <Navbar/>
             </Header>
             <MaakLayoutRelativeContainer>
-                <main>
+                <MaakLayoutMain theme={store.theme}>
                     {children}
-                </main>
-                <MaakLayoutFooter>
+                </MaakLayoutMain>
+                <MaakLayoutFooter theme={store.theme}>
                     <Footer/>
                 </MaakLayoutFooter>
             </MaakLayoutRelativeContainer>

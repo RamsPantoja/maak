@@ -1,8 +1,11 @@
+import { useContext } from 'react';
 import { useEffect, useRef } from 'react';
+import { StoreContext } from '../../store/StoreProvider';
 import { BackgroundAnimationContainer } from './BackgroundAnimationStyles/BackgroundAnimationStyles';
 
 const BackgroundAnimation = ({children}) => {
     const backgroundAnimation = useRef(null);
+    const [store, dispatch] = useContext(StoreContext);
 
     useEffect(() => {
         const createSquare = () => {
@@ -41,7 +44,7 @@ const BackgroundAnimation = ({children}) => {
     }, [backgroundAnimation])
 
     return (
-        <BackgroundAnimationContainer ref={backgroundAnimation}>
+        <BackgroundAnimationContainer theme={store.theme} ref={backgroundAnimation}>
             {children}
         </BackgroundAnimationContainer>
     )

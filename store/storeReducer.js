@@ -4,7 +4,7 @@ const types = {
 
 
 const initialStore = {
-    theme: typeof(window) !== 'undefined' ? localStorage.getItem('theme') : null,
+    theme: 'light',
 }
 
 const storeReducer = (state, action) => {
