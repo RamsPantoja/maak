@@ -26,7 +26,7 @@ const Home = () => {
       type: types.onChangeTheme,
       payload: localStorage.getItem('theme')
     })
-  },[store.theme]);
+  },[store.theme, dispatch]);
 
   return (
     <MaakLayout>
@@ -47,7 +47,7 @@ const Home = () => {
                 basándose en contratos inteligentes y la nueva tecnología NFT.
               </p>
             </AboutInf>
-            <Image src='/svg/016-coin.svg' width={1000} height={700}/>
+            <Image src='/svg/016-coin.svg' alt='give tokens' width={1000} height={700}/>
           </AboutWidthView>
         </About>
         <CreateXSell theme={store.theme}>
